@@ -83,9 +83,10 @@ docker run -p 9001:9001 scrap-generator
 
 ## 📈 Exemplo de resposta
 
+```plaintext
 test_metric{label0="val0",label1="val1",label2="val2",series_id="0"} 87.23
 test_metric{label0="val0",label1="val1",label2="val2",series_id="1"} 45.67
-...
+```
 
 ---
 
