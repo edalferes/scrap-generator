@@ -102,6 +102,7 @@ Simular cargas realistas de scraping Prometheus, incluindo:
 
 ## 📂 Estrutura do projeto
 
+```plaintext
 src/
   scrap_generator/
     app.py
@@ -113,6 +114,7 @@ src/
       label_generator.py
     routes/
       metrics.py
+```
 
 ---
 
