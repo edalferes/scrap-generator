@@ -35,9 +35,11 @@ As variáveis de ambiente podem ser configuradas com prefixo `SG_`. Exemplo:
 
 Exemplo de `.env`:
 
+```dotenv
 SG_SERIES_COUNT=1000000
 SG_STATIC_VALUES=false
 SG_CHURN_INTERVAL=3600
+```
 
 ---
 
@@ -51,7 +53,9 @@ uv sync
 
 ### Rodando o servidor
 
+```bash 
 uvicorn scrap_generator.server:app --reload --host 0.0.0.0 --port 9001
+```
 
 ---
 
@@ -59,11 +63,15 @@ uvicorn scrap_generator.server:app --reload --host 0.0.0.0 --port 9001
 
 ### Build da imagem
 
+```bash
 docker build -t scrap-generator .
+```
 
 ### Rodando via Docker
 
+```bash
 docker run -p 9001:9001 scrap-generator
+```
 
 ---
 
